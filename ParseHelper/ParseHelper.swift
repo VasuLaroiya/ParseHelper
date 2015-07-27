@@ -13,7 +13,7 @@ import ParseFacebookUtilsV4
 class ParseHelper: NSObject {
     static let sharedInstance = ParseHelper()
     
-    var currentUser:PFUser!
+    var currentUser = PFUser.currentUser()!
     
     /**
     Logs the user in
@@ -24,7 +24,6 @@ class ParseHelper: NSObject {
             if error == nil {
                 if completion != nil {
                     completion!(success: true, errorMesssage: nil)
-                    self.currentUser = PFUser.currentUser()!
                 }
             } else {
                 if completion != nil {
@@ -60,7 +59,6 @@ class ParseHelper: NSObject {
                         if error == nil {
                             if completion != nil {
                                 completion!(success: true, errorMesssage: nil)
-                                self.currentUser = PFUser.currentUser()!
                             }
                         } else {
                             if completion != nil {
