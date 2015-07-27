@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BF4BE46EC2BB8220916AC0E /* Pods_ParseHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3BA867B3813A9495064849 /* Pods_ParseHelper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D870EC701B66847F00FCB620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870EC6F1B66847F00FCB620 /* AppDelegate.swift */; };
 		D870EC721B66847F00FCB620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870EC711B66847F00FCB620 /* ViewController.swift */; };
 		D870EC751B66847F00FCB620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D870EC731B66847F00FCB620 /* Main.storyboard */; };
 		D870EC771B66847F00FCB620 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D870EC761B66847F00FCB620 /* Images.xcassets */; };
 		D870EC7A1B66847F00FCB620 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D870EC781B66847F00FCB620 /* LaunchScreen.xib */; };
 		D870EC861B66847F00FCB620 /* ParseHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870EC851B66847F00FCB620 /* ParseHelperTests.swift */; };
+		D870EC901B66848B00FCB620 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870EC8F1B66848B00FCB620 /* ParseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D3BA867B3813A9495064849 /* Pods_ParseHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7838DA982593ED394A8CBA /* Pods-ParseHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHelper/Pods-ParseHelper.release.xcconfig"; sourceTree = "<group>"; };
 		D870EC6A1B66847F00FCB620 /* ParseHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D870EC6E1B66847F00FCB620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D870EC6F1B66847F00FCB620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		D870EC7F1B66847F00FCB620 /* ParseHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D870EC841B66847F00FCB620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D870EC851B66847F00FCB620 /* ParseHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHelperTests.swift; sourceTree = "<group>"; };
+		D870EC8F1B66848B00FCB620 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
+		DB1D082A17CD58745084592E /* Pods-ParseHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseHelper/Pods-ParseHelper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF4BE46EC2BB8220916AC0E /* Pods_ParseHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466428DF508CE8F7939D5C01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BA867B3813A9495064849 /* Pods_ParseHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		646828BF6685D006D0BB7591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB1D082A17CD58745084592E /* Pods-ParseHelper.debug.xcconfig */,
+				4D7838DA982593ED394A8CBA /* Pods-ParseHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D870EC611B66847F00FCB620 = {
 			isa = PBXGroup;
 			children = (
 				D870EC6C1B66847F00FCB620 /* ParseHelper */,
 				D870EC821B66847F00FCB620 /* ParseHelperTests */,
 				D870EC6B1B66847F00FCB620 /* Products */,
+				646828BF6685D006D0BB7591 /* Pods */,
+				466428DF508CE8F7939D5C01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +105,7 @@
 			children = (
 				D870EC6F1B66847F00FCB620 /* AppDelegate.swift */,
 				D870EC711B66847F00FCB620 /* ViewController.swift */,
+				D870EC8F1B66848B00FCB620 /* ParseHelper.swift */,
 				D870EC731B66847F00FCB620 /* Main.storyboard */,
 				D870EC761B66847F00FCB620 /* Images.xcassets */,
 				D870EC781B66847F00FCB620 /* LaunchScreen.xib */,
@@ -119,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D870EC891B66847F00FCB620 /* Build configuration list for PBXNativeTarget "ParseHelper" */;
 			buildPhases = (
+				3A271C604162D1DDC0BDA6A2 /* Check Pods Manifest.lock */,
 				D870EC661B66847F00FCB620 /* Sources */,
 				D870EC671B66847F00FCB620 /* Frameworks */,
 				D870EC681B66847F00FCB620 /* Resources */,
+				A9BDFB036BAF84A11720AA2E /* Embed Pods Frameworks */,
+				18963F61FA9D2DE3F63AF5B5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +237,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18963F61FA9D2DE3F63AF5B5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHelper/Pods-ParseHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A271C604162D1DDC0BDA6A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9BDFB036BAF84A11720AA2E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseHelper/Pods-ParseHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D870EC661B66847F00FCB620 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,6 +292,7 @@
 			files = (
 				D870EC721B66847F00FCB620 /* ViewController.swift in Sources */,
 				D870EC701B66847F00FCB620 /* AppDelegate.swift in Sources */,
+				D870EC901B66848B00FCB620 /* ParseHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +419,7 @@
 		};
 		D870EC8A1B66847F00FCB620 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1D082A17CD58745084592E /* Pods-ParseHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseHelper/Info.plist;
@@ -350,6 +430,7 @@
 		};
 		D870EC8B1B66847F00FCB620 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7838DA982593ED394A8CBA /* Pods-ParseHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseHelper/Info.plist;
@@ -411,6 +492,7 @@
 				D870EC8B1B66847F00FCB620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D870EC8C1B66847F00FCB620 /* Build configuration list for PBXNativeTarget "ParseHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +501,7 @@
 				D870EC8E1B66847F00FCB620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
